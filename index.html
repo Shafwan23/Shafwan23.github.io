@@ -217,7 +217,18 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
     <script src='https://cdnjs.cloudflare.com/ajax/libs/particles.js/2.0.0/particles.min.js'></script>
     <script src="assets/js/particle.js"></script>
-
+    <script>
+    
+    setTimeout(()=>{
+        let today = new Date();
+        let firstDate = new Date("23-Dec-2002");
+        let diff = (today - firstDate) / (1000 * 60 * 60 * 24 * 365.25); // convert milliseconds to years
+    
+        console.log(diff);
+        document.querySelector("#userAge").innerText = diff;
+        
+    },400)
+    </script>
 </body>
 
 </html>
